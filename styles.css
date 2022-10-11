@@ -41,25 +41,24 @@ body {
   padding: 1rem 1.2rem;
   border-bottom: 2px solid #D49A3F;
   position: relative;
+  overflow: hidden;
 }
-.todo__item::after{
+.todo__item span.closeIcon:hover{
+  cursor: pointer;
+}
+.todo__item span.closeIcon:before{
     content: "\f00d";
     position: absolute;
     font-family: FontAwesome;
     right: 10px;
-}
-.todo__item::after::hover{
-  cursor: pointer;
-}
-
-.todo__item:hover {
-  cursor: default;
-}
+    z-index: 9999;
+} 
 .done {
   text-decoration: line-through;
   border-bottom: 2px solid rgb(65, 52, 32);
   color: #aaa;
 }
+
 
 
 
